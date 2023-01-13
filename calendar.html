@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--This website created by
+    Patrick Zielinski, Sydney Cardy, Aliya Iqbal, and Sejad I Kiyam.
+    Group 12
+    -->
+<!--Summary for this document:
+    This is the calendar page for eShelf. It will display a calendar
+    with the days of the month.
+    -->
+<head>
+    <!--Pull our resources needed for proper page display-->
+    <meta charset="utf-8" />
+    <title>Calendar - eShelf</title>
+
+    <!--Pull our resources needed for proper page display-->
+    <!--This is from Google Fonts, and is used to enable the "Lobster" font for our logo-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+    <!--Page styling and favicon-->
+    <link rel="stylesheet" type="text/css" href="calendarStyle.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+</head>
+<body>
+    <!--Navbar code-->
+    <ul class="navbar">
+        <li class="navbarItem"><a href="index.html" class="button" id="logo">eShelf</a></li>
+        <li class="navbarItem"><a href="userManagement.html" class="button">My Profile</a></li>
+        <li class="navbarItem"><a href="calendar.html" class="button" id="thisPage">Calendar</a></li>
+        <li class="navbarItem"><a href="agenda.html" class="button">Agenda</a></li>
+    </ul>
+
+    <!--Calendar code-->
+    <div class="flex-calendar">
+        <div class="month" id="month">December</div>
+        <div class="weekdayRow">
+            <div class="weekdayElement">Sun</div>
+            <div class="weekdayElement">Mon</div>
+            <div class="weekdayElement">Tue</div>
+            <div class="weekdayElement">Wed</div>
+            <div class="weekdayElement">Thu</div>
+            <div class="weekdayElement">Fri</div>
+            <div class="weekdayElement">Sat</div>
+        </div>
+        <div class="week1">
+            <div class="week1Element" id="r1c1">1</div>
+            <div class="week1Element" id="r1c2">2</div>
+            <div class="week1Element" id="r1c3">3</div>
+            <div class="week1Element" id="r1c4">4</div>
+            <div class="week1Element" id="r1c5">5</div>
+            <div class="week1Element" id="r1c6">6</div>
+            <div class="week1Element" id="r1c7">7</div>
+        </div>
+        <div class="week2">
+            <div class="week2Element" id="r2c1">8</div>
+            <div class="week2Element" id="r2c2">9</div>
+            <div class="week2Element" id="r2c3">10</div>
+            <div class="week2Element" id="r2c4">11</div>
+            <div class="week2Element" id="r2c5">12</div>
+            <div class="week2Element" id="r2c6">13</div>
+            <div class="week2Element" id="r2c7">14</div>
+        </div>
+        <div class="week3">
+            <div class="week3Element" id="r3c1">15</div>
+            <div class="week3Element" id="r3c2">16</div>
+            <div class="week3Element" id="r3c3">17</div>
+            <div class="week3Element" id="r3c4">18</div>
+            <div class="week3Element" id="r3c5">19</div>
+            <div class="week3Element" id="r3c6">20</div>
+            <div class="week3Element" id="r3c7">21</div>
+        </div>
+        <div class="week4">
+            <div class="week4Element" id="r4c1">22</div>
+            <div class="week4Element" id="r4c2">23</div>
+            <div class="week4Element" id="r4c3">24</div>
+            <div class="week4Element" id="r4c4">25</div>
+            <div class="week4Element" id="r4c5">26</div>
+            <div class="week4Element" id="r4c6">27</div>
+            <div class="week4Element" id="r4c7">28</div>
+        </div>
+        <div class="week5">
+            <div class="week5Element" id="r5c1">29</div>
+            <div class="week5Element" id="r5c2">30</div>
+            <div class="week5Element" id="r5c3">31</div>
+            <div class="week5Element" id="r5c4">-</div>
+            <div class="week5Element" id="r5c5">-</div>
+            <div class="week5Element" id="r5c6">-</div>
+            <div class="week5Element" id="r5c7">-</div>
+        </div>
+        <div class="week6">
+            <div class="week6Element" id="r6c1">-</div>
+            <div class="week6Element" id="r6c2">-</div>
+            <div class="week6Element" id="r6c3">-</div>
+            <div class="week6Element" id="r6c4">-</div>
+            <div class="week6Element" id="r6c5">-</div>
+            <div class="week6Element" id="r6c6">-</div>
+            <div class="week6Element" id="r6c7">-</div>
+        </div>
+    </div>
+    <script src="calendarController.js"></script>
+</body>
+</html>

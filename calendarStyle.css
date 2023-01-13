@@ -1,0 +1,178 @@
+﻿/*Navbar code*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: darkslategrey;
+}
+
+.navbarItem a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#logo {
+    font-family: 'Lobster', cursive;
+    color: mediumpurple;
+}
+
+#thisPage {
+    background-color: black;
+}
+
+.navbarItem a:hover {
+    background-color: #111;
+}
+
+/*Flex calendar styling*/
+.flex-calendar {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.month {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+}
+
+.weekdayRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.weekdayElement {
+    width: 100px;
+    text-align: center;
+    border: solid;
+    border-color: dimgrey;
+    border-width: 1px;
+}
+
+.week1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 50px;
+}
+
+.week1Element {
+    width: 100px;
+    text-align: center;
+    border: solid;
+    border-color: #DDD;
+    border-width: 1px;
+}
+
+.week1Data {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.week1Event {
+    width: 100px;
+    text-align: center;
+    border: solid;
+    border-color: #DDD;
+    border-width: 1px;
+}
+
+.week2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 50px;
+}
+
+.week2Element {
+    width: 100px;
+    text-align: center;
+    border: solid;
+    border-color: #DDD;
+    border-width: 1px;
+}
+
+.week3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 50px;
+}
+
+.week3Element {
+    width: 100px;
+    text-align: center;
+    border: solid;
+    border-color: #DDD;
+    border-width: 1px;
+}
+
+.week4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 50px;
+}
+
+.week4Element {
+    width: 100px;
+    text-align: center;
+    border: solid;
+    border-color: #DDD;
+    border-width: 1px;
+}
+
+.week5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 50px;
+}
+
+.week5Element {
+    width: 100px;
+    text-align: center;
+    border: solid;
+    border-color: #DDD;
+    border-width: 1px;
+}
+
+.week6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 50px;
+}
+
+.week6Element {
+    width: 100px;
+    text-align: center;
+    border: solid;
+    border-color: #DDD;
+    border-width: 1px;
+}

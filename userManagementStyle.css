@@ -1,0 +1,78 @@
+/*Navbar code*/
+ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: darkslategrey;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#logo {
+    font-family: 'Lobster', cursive;
+    color: mediumpurple;
+}
+
+#thisPage {
+    background-color: black;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+/*Profile code*/
+
+img {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 332px;
+    height: 332px;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.18), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+}
+
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkslategrey;
+    text-align: center;
+    font-size: 40px;
+}
+
+h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: slategrey;
+    text-align: center;
+    font-size: 25px;
+}
+
+.pButton {
+    border: none;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.18), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-left: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    background-color: mediumpurple;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pButtons {
+    margin: auto;
+    width: 151px;
+}

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--This website created by
+    Patrick Zielinski, Sydney Cardy, Aliya Iqbal, and Sejad I Kiyam.
+    Group 12
+    -->
+<!--Format for the documents in the website:
+
+    pageName.html - The HTML code for a page
+    pageNameStyle.css - The CSS styling for that page
+    pageNameController.js - The JS file controlling dynamic aspects of
+    the page.
+
+    Example:
+    index.html
+    indexStyle.css
+    indexController.js
+    -->
+<!--Summary for this document:
+    This is the home page for eShelf. The user will be taken here first,
+    and will be asked to register first if there is no local user
+    profile for them. There are buttons on the bottom that link
+    to the main three functions of our website, which is
+    to check your calendar, access your agenda, and provision your
+    profile.
+    -->
+<head>
+    <meta charset="utf-8" />
+    <title>Home - eShelf</title>
+
+    <!--Pull our resources needed for proper page display-->
+    <!--This is from Google Fonts, and is used to enable the "Lobster" font for our logo-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+    <!--Page styling and favicon-->
+    <link rel="stylesheet" type="text/css" href="indexStyle.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+</head>
+<body>
+    <!--Logo and welcome message-->
+    <h1>eShelf</h1>
+    <h2 id="welcomeMessage">Welcome to eShelf!</h2>
+    <h3 id="needToRegister">You need to register first! Click "Provision Profile" to do so!</h3>
+
+    <!--User control panel buttons-->
+    <div class="buttons">
+        <a href="userManagement.html" class="button">Provision Profile</a>
+        <a href="calendar.html" class="button">Check Calendar</a>
+        <a href="agenda.html" class="button">Access Agenda</a>
+    </div>
+    <script src="storageController.js"></script>
+    <script src="indexController.js"></script>
+</body>
+</html>

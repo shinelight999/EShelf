@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--This website created by
+    Patrick Zielinski, Sydney Cardy, Aliya Iqbal, and Sejad I Kiyam.
+    Group 12
+    -->
+<!--Summary for this document:
+    This is eShelf's user management page, which allows a person
+    to register their profile into eShelf so that they can start
+    working in eShelf. If the user has already registered, then
+    the JS will fetch the user's info, and display it here.
+    If one needs to register or update their info, they can
+    click "Modify Profile", and they will be taken to the appropriate
+    page.
+    -->
+<head>
+    <!--Pull our resources needed for proper page display-->
+    <meta charset="utf-8" />
+    <title>My Profile - eShelf</title>
+
+    <!--Pull our resources needed for proper page display-->
+    <!--This is from Google Fonts, and is used to enable the "Lobster" font for our logo-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+    <!--Page styling and favicon-->
+    <link rel="stylesheet" type="text/css" href="userManagementStyle.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+</head>
+<body>
+    <!--Navbar code-->
+    <ul class="navbar">
+        <li><a href="index.html" class="button" id="logo">eShelf</a></li>
+        <li><a href="userManagement.html" class="button" id="thisPage">My Profile</a></li>
+        <li><a href="calendar.html" class="button">Calendar</a></li>
+        <li><a href="agenda.html" class="button">Agenda</a></li>
+    </ul>
+
+    <!--User profile code-->
+    <img src="userPic.jpg" alt="User profile picture" id="userPic"/>
+    <h2 id="userName">Cute Puppy</h2>
+    <h4 id="userRole">Student</h4>
+    <div class="pButtons">
+        <a href="userProfileEditor.html" class="pButton">Modify Profile</a>
+    </div>
+    <script src="storageController.js"></script>
+    <script src="userManagementController.js"></script>
+</body>
+</html>

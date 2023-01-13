@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--This website created by
+    Patrick Zielinski, Sydney Cardy, Aliya Iqbal, and Sejad I Kiyam.
+    Group 12
+    -->
+<!--Summary for this document:
+    This is the agenda page, which shows the user which events are
+    pinned to their list, late, and upcoming.
+
+    The display of events is controlled by JS.
+    -->
+<head>
+    <!--Pull our resources needed for proper page display-->
+    <meta charset="utf-8" />
+    <title>Agenda - eShelf</title>
+
+    <!--Pull our resources needed for proper page display-->
+    <!--This is from Google Fonts, and is used to enable the "Lobster" font for our logo-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+    <!--Page styling and favicon-->
+    <link rel="stylesheet" type="text/css" href="agendaStyle.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+</head>
+<body>
+    <!--Navbar code-->
+    <ul class="navbar">
+        <li class="navbarItem"><a href="index.html" class="button" id="logo">eShelf</a></li>
+        <li class="navbarItem"><a href="userManagement.html" class="button">My Profile</a></li>
+        <li class="navbarItem"><a href="calendar.html" class="button">Calendar</a></li>
+        <li class="navbarItem"><a href="agenda.html" class="button" id="thisPage">Agenda</a></li>
+    </ul>
+
+    <div class="flex-agenda">
+            <div class="addItem">
+                    <h2>Add Item</h2>
+                    <form class="eventForm">
+                        <br>
+                        Item name: <br>
+                        <input class="formItem" type="text" id="eventName"><br>
+
+                        
+                        Item description: <br>
+                        <input class="formItem" type="text" id="eventDescription"><br>
+                        
+                        <select class="formItem" id="eventType">
+                            <option>Pinned</option>
+                            <option>Late</option>
+                            <option>Upcoming</option>
+                        </select>
+        
+                        <input class="formItem" id="addEventButton" type="submit" value="Add Item!">
+                    </form>
+                </div>
+    </div>
+    <div class="flex-agenda">
+        <!--Pinned list code-->
+        <div class="pinned">
+            <h2>Pinned</h2>
+            <div id="pinnedList">
+                
+            </div>
+        </div>
+
+        <!--Late list code-->
+        <div class="late">
+            <h2>Late</h2>
+            <div id="lateList">
+
+            </div>
+        </div>
+
+        <!--Upcoming list code-->
+        <div class="upcoming">
+            <h2>Upcoming</h2>
+            <div id="upcomingList">
+                
+            </div>
+        </div>
+    </div>
+    <script src="storageController.js"></script>
+    <script src="agendaController.js"></script>
+</body>
+</html>

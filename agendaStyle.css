@@ -1,0 +1,135 @@
+/*Navbar code*/
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: darkslategrey;
+}
+
+.navbarItem a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#logo {
+    font-family: 'Lobster', cursive;
+    color: mediumpurple;
+}
+
+#thisPage {
+    background-color: black;
+}
+
+.navbarItem a:hover {
+    background-color: #111;
+}
+
+/*Agenda code*/
+h2 {
+    text-align: center;
+}
+
+input {
+    align-self: center;
+    border: none;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.18), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    margin: 5px;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    background-color: snow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex-agenda {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.addItem {
+    margin: 10px;
+    width: 500px;
+    background-color: #EEE;
+    padding: 10px;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.18), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+}
+
+.pinned {
+    margin: 10px;
+    width: 500px;
+    background-color: #FFE;
+    padding: 10px;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.18), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+}
+
+.late {
+    margin: 10px;
+    width: 500px;
+    background-color: #FEE;
+    padding: 10px;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.18), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+}
+
+.upcoming {
+    margin: 10px;
+    width: 500px;
+    background-color: #EFE;
+    padding: 10px;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.18), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+}
+
+.pinnedList{
+    display: flex;
+}
+
+.item {
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.18), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+    display: flex;
+}
+
+.itemName {
+    font-style: italic;
+    text-align: center;
+    margin: 5px;
+}
+
+.itemDescription {
+    text-align: center;
+    margin: 5px;
+}
+
+.itemDelete {
+    display: inline-block;
+    background-color: white;
+    box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.18), 0 6px 20px 0 rgba(0, 0, 0, 0.18);
+    align-content: center;
+    margin: 5px;
+}
+
+.eventForm {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 250px;
+    margin: auto;
+}

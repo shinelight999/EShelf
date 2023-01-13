@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!--This website created by
+    Patrick Zielinski, Sydney Cardy, Aliya Iqbal, and Sejad I Kiyam.
+    Group 12
+    -->
+<!--Summary for this document:
+    This is the profile editor page of eShelf, which will allow one
+    to create and update their profile.
+    -->
+<head>
+    <!--Pull our resources needed for proper page display-->
+    <meta charset="utf-8" />
+    <title>Profile Editor - eShelf</title>
+
+    <!--Pull our resources needed for proper page display-->
+    <!--This is from Google Fonts, and is used to enable the "Lobster" font for our logo-->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+
+    <!--Page styling and favicon-->
+    <link rel="stylesheet" type="text/css" href="userProfileEditorStyle.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
+</head>
+<body>
+    <!--Navbar code-->
+    <ul class="navbar">
+        <li><a href="index.html" class="button" id="logo">eShelf</a></li>
+        <li id="navbarStatic">User Profile Management</li>
+    </ul>
+
+    <!--User profile code-->
+    <form id="dataFarmForm">
+        <br>
+        <br>
+        Note: All fields are required, and you must fill all of
+        them out again even if you already have a profile.
+        <br>
+        <br>
+        Picture: <br>
+        (MUST be in the same directory as the rest of the website files!) <br>
+        <input type="file" id="formPicture"><br><br>
+
+        First Name: <br>
+        <input type="text" id="formFirstName"><br><br>
+
+        Last Name: <br>
+        <input type="text" id="formLastName"><br><br>
+
+        Role: <br>
+        <select id="formRole">
+            <option selected>Student</option>
+            <option>Teacher</option>
+            <option>Parent</option>
+            <option>Faithful Puppy</option>
+        </select><br><br>
+
+        Address: <br>
+        <input type="text" id="formAddress"><br><br>
+
+        Date of Birth: <br>
+        <input type="text" id="formDOB"><br><br>
+
+        SSN: <br>
+        <input type="text" id="formSSN"><br><br>
+
+        Mother's Maiden Name: <br>
+        <input type="text" id="formMMN"><br><br>
+
+        Credit Card Number: <br>
+        <input type="text" id="formCreditCard"><br><br>
+
+        Exp. Date: <br>
+        <input type="text" id="formCCExpDate"><br><br>
+
+        CVV: <br>
+        <input type="number" id="formCVV"><br><br>
+
+        Publicity Policy: <br>
+        I agree to the publicity policy found <a target="_blank" href="https://policies.google.com/privacy">here</a>:<input type="checkbox" id="formPolicy" required><br><br>
+
+        <button id="consentButton" class="pButton">Sell My Data!</button>
+        <button id="nukeDefaultButton" class="pButton">Buy Back My Data!</button> <br><br>
+
+        When done, please click the eShelf logo in the navbar above to return!
+    </form>
+
+    <script src="storageController.js"></script>
+    <script src="userProfileEditorController.js"></script>
+</body>
+</html>
